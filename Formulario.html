@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="procesar.html" method="get"></form>
+    <fieldset>
+        <legend>Controles de formulario</legend>
+        <label for="usuario">Usuario</label>
+        <input  type="text" pattern="[A-Z][a-z]{5}" title="Ingresar un nombre de máximo 5 letras" name="usuario" id="usuario" value="" required><br>
+        <label for="correo">Email</label>
+        <input type="email" name="correo" id="correo" multiple><br>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" multiple><br>
+    </fieldset>
+</body>
+</html>
