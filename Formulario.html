@@ -3,17 +3,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="procesar.html" method="get"></form>
     <fieldset>
         <legend>Controles de formulario</legend>
         <label for="usuario">Usuario</label>
-        <input  type="text" pattern="[A-Z][a-z]{5}" title="Ingresar un nombre de máximo 5 letras" name="usuario" id="usuario" value="" required><br>
+        <input  type="text" pattern="[A-Z a-z]{0,5}" title="Ingresar un nombre de máximo 5 letras" name="usuario" id="usuario" value="" required><br>
+       
         <label for="correo">Email</label>
         <input type="email" name="correo" id="correo" multiple><br>
+        
         <label for="telefono">Teléfono</label>
         <input type="tel" name="telefono" id="telefono" multiple><br>
+       
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha" ><br>
+        
+        <label for="joven">Joven</label>
+        <input type="radio" name="edad" id="joven" value="0-25">
+       
+        <label for="adulto">Adulto</label>
+        <input type="radio" name="edad" id="adulto" value="26-65">
+        
+        <label for="tercera">Tercera edad</label>
+        <input type="radio" name="edad" id="tercera" value="más de 65"><br>
+       
+        <label for="tercera">Rango</label>
+        <input type="range" name="ingreso" id="ingreso"  min="1" max="100"><br>
+       
+        
+        <label for="terminos">Terminos</label>
+        <input type="checkbox" name=" terminos" id="terminos" value="si" ><br>
+       
+       
+
+        <select name="pais" id="pais">
+            <option value="co" selected>Colombia</option>
+            <option value="br">Brasil</option>
+            <option value="ec">Ecuador</option>
+            <option value="ve">Venezuela</option>
+            <option value="ca">Canadá</option>
+        </select>
+        <br><br>
+        <textarea name="datos" id="datos" cols="30" rows="10"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <br>
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="mostrarMensaje()">Botón</button>
+        <button type="button" id="otroBoton">Botón2</button>
+
     </fieldset>
+    <script src="funcion.js"></script>
 </body>
 </html>
